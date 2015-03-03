@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     bpf_u_int32 net;
     bpf_u_int32 mask;
     char errbuf[PCAP_ERRBUF_SIZE];
-       // dev = pcap_lookupdev(errbuf);//Определяем устройство (берем первое подходящее)
+       
         if (dev == NULL)
         {
             fprintf(stderr, "Couldn't find device: %s\n", errbuf);
