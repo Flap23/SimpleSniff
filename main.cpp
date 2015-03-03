@@ -26,7 +26,7 @@ void NewPacket(u_char *args, const struct pcap_pkthdr *pkthdr, const u_char
 
     u_int16_t etype=ethernet_frame(args, pkthdr, packet); //вызываем функцию обрабоки и передаем ей пакет
 
-    //дальше в соответсвие с возвращаемым типоп выводим информацию о том, что за протокол
+    //дальше в соответсвие с возвращаемым, типоп выводим информацию о том, что за протокол
     if (etype==ETHERTYPE_IP)
     {printf("(IP)\n"); }
 
